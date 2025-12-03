@@ -9,9 +9,9 @@ layers:
   - F3
   - F4
   - F5
-  - F6
-  - F7
-  - F8
+  - '&caps_word'
+  - '['
+  - ']'
   - '-'
   - '='
   - BACKSPACE
@@ -118,7 +118,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&bootloader'
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
@@ -131,7 +131,7 @@ layers:
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
-  - W
+  - ''
   - ''
   - ''
   - ''
@@ -144,9 +144,9 @@ layers:
   - RGB SAI
   - RGB EFF
   - ''
-  - ''
-  - ''
-  - ''
+  - '&msc SCRL_LEFT'
+  - '&msc SCRL_UP'
+  - '&msc SCRL_RIGHT'
   - ''
   - ''
   - ''
@@ -155,11 +155,11 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - '&mkp LCLK'
+  - '&mmv MOVE_LEFT'
+  - '&msc SCRL_DOWN'
+  - '&mmv MOVE_RIGHT'
+  - '&mkp RCLK'
   - ''
   - ''
   - ''
@@ -171,7 +171,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - '&mkp MCLK'
   - ''
   - ''
   - ''
