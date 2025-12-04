@@ -82,11 +82,11 @@ layers:
   - CMENU
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - PG UP
+  - {t: ▽, type: trans}
   - HOME
   - END
   - PRINTSCREEN
-  - '0'
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - LALT
@@ -94,11 +94,11 @@ layers:
   - LSHFT
   - {t: ▽, type: trans}
   - CLCK
+  - PAGE UP
   - LEFT ARROW
-  - DOWN ARROW
+  - DOWN
   - UP ARROW
   - RIGHT
-  - DEL
   - BSPC
   - {t: ▽, type: trans}
   - UNDO
@@ -170,9 +170,9 @@ layers:
   - RGB TOG
   - ''
   - ''
-  - ''
+  - '&mkp MB4'
   - '&msc SCRL_DOWN'
-  - ''
+  - '&mkp MB5'
   - ''
   - ''
   - ''
