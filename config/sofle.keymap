@@ -66,11 +66,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&kp GRAVE  &kp F1  &kp F2  &kp F3       &kp F4   &kp F5                        &caps_word      &kp HOME        &kp END       &kp MINUS        &kp EQUAL         &kp BACKSPACE
-&trans     &kp F6  &kp F7  &kp F8       &kp F9   &kp F10                       &mkp LCLK       &msc SCRL_DOWN  &msc SCRL_UP  &mkp RCLK        &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans     &trans  &trans  &trans       &kp F11  &kp F12                       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &mkp LCLK         &mkp RCLK
-&trans     &trans  &trans  &kp KP_PLUS  &trans   &trans   &trans    &trans     &mkp MB4        &mkp MB5        &trans        &trans           &trans            &trans
-                   &trans  &trans       &trans   &trans   &trans    &mkp MCLK  &trans          &trans          &trans        &trans
+&kp GRAVE  &kp F1  &kp F2  &kp F3          &kp F4           &kp F5                        &caps_word      &kp HOME        &kp END       &kp MINUS        &kp EQUAL         &kp BACKSPACE
+&trans     &kp F6  &kp F7  &kp F8          &kp F9           &kp F10                       &mkp LCLK       &msc SCRL_DOWN  &msc SCRL_UP  &mkp RCLK        &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&trans     &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_RIGHT  &kp F11                       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &mkp LCLK         &mkp RCLK
+&trans     &trans  &trans  &trans          &trans           &kp F12  &trans    &trans     &mkp MB4        &mkp MB5        &trans        &trans           &trans            &trans
+                   &trans  &trans          &trans           &trans   &trans    &mkp MCLK  &trans          &trans          &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
