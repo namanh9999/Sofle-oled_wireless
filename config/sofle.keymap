@@ -28,6 +28,22 @@
         };
     };
 
+    macros {
+        vscode_run: vscode_run {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL &kp LEFT_ALT &kp N>;
+            label = "VSCODE_RUN";
+        };
+
+        vscode_format: vscode_format {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_SHIFT &kp LEFT_ALT &kp F>;
+            label = "VSCODE_FORMAT";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
