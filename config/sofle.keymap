@@ -42,6 +42,32 @@
             bindings = <&kp LEFT_SHIFT &kp LEFT_ALT &kp F>;
             label = "VSCODE_FORMAT";
         };
+
+        test_sendkey: test_sendkey {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LEFT_GUI &kp R>,
+                <&macro_wait_time 200>,
+                <&kp P &kp O &kp W &kp E &kp R &kp S &kp H &kp E &kp L &kp L &kp RCTRL &kp LEFT_SHIFT &kp ENTER>,
+                <&macro_wait_time 300>,
+                <&kp W &kp H &kp O &kp A &kp M &kp I &kp SPACE &kp FSLH &kp A &kp L &kp L &kp RET>;
+
+            label = "TEST_SENDKEY";
+        };
+
+        powershell_admin_mode: powershell_admin_mode {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LEFT_GUI &kp R>,
+                <&macro_wait_time 200>,
+                <&kp P &kp O &kp W &kp E &kp R &kp S &kp H &kp E &kp L &kp L &kp RCTRL &kp LEFT_SHIFT &kp ENTER>,
+                <&macro_wait_time 300>,
+                <&kp W &kp H &kp O &kp A &kp M &kp I &kp SPACE &kp FSLH &kp A &kp L &kp L &kp RET>;
+
+            label = "POWERSHELL_ADMIN_MODE";
+        };
     };
 
     keymap {
