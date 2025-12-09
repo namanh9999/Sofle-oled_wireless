@@ -15,7 +15,7 @@ layers:
   - '-'
   - '='
   - BACKSPACE
-  - {t: ▽, type: trans}
+  - ''
   - F6
   - F7
   - F8
@@ -27,9 +27,9 @@ layers:
   - '&mkp RCLK'
   - '['
   - ']'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
   - '&mmv MOVE_LEFT'
   - '&mmv MOVE_RIGHT'
   - F11
@@ -39,30 +39,30 @@ layers:
   - '&mmv MOVE_RIGHT'
   - '&mkp LCLK'
   - '&mkp RCLK'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - F12
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
   - '&mkp MB4'
   - '&mkp MB5'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - '&vscode_format'
+  - '&vscode_run'
+  - ''
+  - ''
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
   - '&mkp MCLK'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
   raise:
   - BT CLR
   - {t: BT, h: '0'}
@@ -98,7 +98,7 @@ layers:
   - DOWN ARROW
   - UP ARROW
   - RIGHT
-  - ''
+  - '&powershell_admin_mode'
   - ''
   - {t: ▽, type: trans}
   - UNDO
