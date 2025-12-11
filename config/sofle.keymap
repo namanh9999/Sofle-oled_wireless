@@ -67,6 +67,19 @@
 
             label = "OPENVSCODE";
         };
+
+        openpowershell: openpowershell {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RCTRL &kp RALT &kp P>,
+                <&macro_wait_time 100>,
+                <&macro_release>,
+                <&kp RCTRL &kp RIGHT_ALT &kp P>;
+
+            label = "OPENPOWERSHELL";
+        };
     };
 
     keymap {
