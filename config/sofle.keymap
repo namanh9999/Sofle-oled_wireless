@@ -32,41 +32,40 @@
         vscode_run: vscode_run {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp LEFT_ALT &kp N>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LEFT_ALT &kp N>,
+                <&macro_wait_time 100>,
+                <&macro_release>,
+                <&kp LCTRL &kp LALT &kp N>;
+
             label = "VSCODE_RUN";
         };
 
         vscode_format: vscode_format {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT &kp LEFT_ALT &kp F>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT &kp LEFT_ALT &kp F>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT &kp LEFT_ALT &kp F>,
+                <&macro_wait_time 100>;
+
             label = "VSCODE_FORMAT";
         };
 
-        test_sendkey: test_sendkey {
+        openvscode: openvscode {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kp LEFT_GUI &kp R>,
-                <&macro_wait_time 200>,
-                <&kp P &kp O &kp W &kp E &kp R &kp S &kp H &kp E &kp L &kp L &kp RCTRL &kp LEFT_SHIFT &kp ENTER>,
-                <&macro_wait_time 300>,
-                <&kp W &kp H &kp O &kp A &kp M &kp I &kp SPACE &kp FSLH &kp A &kp L &kp L &kp RET>;
+                <&macro_press>,
+                <&kp RCTRL &kp RIGHT_ALT &kp V>,
+                <&macro_wait_time 100>,
+                <&macro_release>,
+                <&kp RCTRL &kp RIGHT_ALT &kp V>;
 
-            label = "TEST_SENDKEY";
-        };
-
-        powershell_admin_mode: powershell_admin_mode {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&kp LEFT_GUI &kp R>,
-                <&macro_wait_time 200>,
-                <&kp P &kp O &kp W &kp E &kp R &kp S &kp H &kp E &kp L &kp L &kp RCTRL &kp LEFT_SHIFT &kp ENTER>,
-                <&macro_wait_time 300>,
-                <&kp W &kp H &kp O &kp A &kp M &kp I &kp SPACE &kp FSLH &kp A &kp L &kp L &kp RET>;
-
-            label = "POWERSHELL_ADMIN_MODE";
+            label = "OPENVSCODE";
         };
     };
 
