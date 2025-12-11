@@ -92,7 +92,7 @@ layers:
   - LALT
   - LCTRL
   - LSHFT
-  - {t: ▽, type: trans}
+  - '&openvscode'
   - CLCK
   - LEFT
   - DOWN ARROW
