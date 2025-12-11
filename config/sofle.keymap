@@ -48,9 +48,9 @@
             bindings =
                 <&macro_press>,
                 <&kp LEFT_SHIFT &kp LEFT_ALT &kp F>,
+                <&macro_wait_time 100>,
                 <&macro_release>,
-                <&kp LEFT_SHIFT &kp LEFT_ALT &kp F>,
-                <&macro_wait_time 100>;
+                <&kp LEFT_SHIFT &kp LEFT_ALT &kp F>;
 
             label = "VSCODE_FORMAT";
         };
@@ -107,11 +107,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&kp GRAVE  &kp F1  &kp F2  &kp F3          &kp F4           &kp F5                       &caps_word      &kp HOME        &kp END       &kp MINUS        &kp EQUAL         &kp BACKSPACE
-&none      &kp F6  &kp F7  &kp F8          &kp F9           &kp F10                      &mkp LCLK       &msc SCRL_DOWN  &msc SCRL_UP  &mkp RCLK        &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&none      &none   &none   &mmv MOVE_LEFT  &mmv MOVE_RIGHT  &kp F11                      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &mkp LCLK         &mkp RCLK
-&none      &none   &none   &none           &none            &kp F12  &none    &none      &mkp MB4        &mkp MB5        &none         &none            &vscode_format    &vscode_run
-                   &none   &none           &none            &none    &none    &mkp MCLK  &none           &none           &none         &none
+&kp GRAVE  &kp F1  &kp F2  &kp F3          &kp F4           &kp F5                        &caps_word      &kp HOME        &kp END       &kp MINUS        &kp EQUAL         &kp BACKSPACE
+&trans     &kp F6  &kp F7  &kp F8          &kp F9           &kp F10                       &mkp LCLK       &msc SCRL_DOWN  &msc SCRL_UP  &mkp RCLK        &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&trans     &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_RIGHT  &kp F11                       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &mkp LCLK         &mkp RCLK
+&trans     &trans  &trans  &trans          &trans           &kp F12  &trans    &trans     &mkp MB4        &mkp MB5        &trans        &trans           &vscode_format    &vscode_run
+                   &trans  &trans          &trans           &trans   &trans    &mkp MCLK  &trans          &trans          &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -128,10 +128,10 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans         &trans          &trans        &trans           &trans                  &trans
-&trans      &kp INS       &kp PSCRN     &kp K_CMENU   &trans        &trans                          &kp PAGE_UP    &kp HOME        &kp END       &kp PRINTSCREEN  &trans                  &trans
-&trans      &kp LALT      &kp LCTRL     &kp LSHFT     &trans        &kp CLCK                        &kp LEFT       &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT        &powershell_admin_mode  &none
-&trans      &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE   &trans        &trans    &trans  &kp PAGE_DOWN  &trans          &trans        &trans           &trans                  &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans         &trans          &trans        &trans           &trans  &trans
+&trans      &kp INS       &kp PSCRN     &kp K_CMENU   &trans        &trans                          &kp PAGE_UP    &kp HOME        &kp END       &kp PRINTSCREEN  &trans  &trans
+&trans      &kp LALT      &kp LCTRL     &kp LSHFT     &trans        &kp CLCK                        &kp LEFT       &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT        &none   &none
+&trans      &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE   &trans        &trans    &trans  &kp PAGE_DOWN  &trans          &trans        &trans           &trans  &trans
                           &trans        &trans        &trans        &trans        &trans    &trans  &trans         &trans          &trans        &trans
             >;
 
@@ -148,11 +148,11 @@
 
             label = "adjust";
             bindings = <
-&bt BT_CLR         &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                               &none      &none           &none           &none            &none            &studio_unlock
-&ext_power EP_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF                            &none      &msc SCRL_LEFT  &msc SCRL_UP    &msc SCRL_RIGHT  &none            &none
-&none              &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &none            &none            &none                                      &mkp LCLK  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP     &mmv MOVE_RIGHT  &mkp RCLK
-&none              &none            &none            &none            &none            &none            &rgb_ug RGB_TOG    &none  &none      &mkp MB4        &msc SCRL_DOWN  &mkp MB5         &none            &none
-                                    &none            &none            &none            &none            &none              &none  &none      &none           &none           &none
+&bt BT_CLR         &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                                &trans     &trans          &trans          &trans           &trans           &studio_unlock
+&ext_power EP_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF                             &trans     &msc SCRL_LEFT  &msc SCRL_UP    &msc SCRL_RIGHT  &trans           &trans
+&trans             &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &trans           &trans           &trans                                      &mkp LCLK  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP     &mmv MOVE_RIGHT  &mkp RCLK
+&trans             &trans           &trans           &trans           &trans           &trans           &rgb_ug RGB_TOG    &trans  &trans     &mkp MB4        &msc SCRL_DOWN  &mkp MB5         &trans           &trans
+                                    &trans           &trans           &trans           &trans           &trans             &trans  &trans     &trans          &trans          &trans
             >;
         };
     };
