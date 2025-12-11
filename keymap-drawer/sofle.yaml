@@ -80,7 +80,7 @@ layers:
   - INS
   - PSCRN
   - CMENU
-  - {t: ▽, type: trans}
+  - '&openpowershell'
   - {t: ▽, type: trans}
   - PAGE UP
   - HOME
